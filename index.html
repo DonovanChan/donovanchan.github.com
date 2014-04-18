@@ -1,41 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html>
-  <head>
-    <title>DonovanChan @ GitHub</title>
-    <script language="JavaScript">
-      <!--Script courtesy of http://www.web-source.net - Your Guide to Professional Web Site Design and Development
-      var time = null
-      function move() {
-      window.location = 'http://donovanchan.github.com/filemaker.tmbundle'
-      }
-      //-->
-    </script>
-    <style type="text/css">
-      body {
-        margin-top: 1.0em;
-        background-color: #e9c1a0;
-        font-family: Helvetica, Arial, FreeSans, san-serif;
-        color: #000000;
-      }
-      p {
-        padding-top:100px;
-      }
-    </style
-    <script type="text/javascript">
+---
+layout: default
+title: Donovan Chandler
+---
 
-     var _gaq = _gaq || [];
-     _gaq.push(['_setAccount', 'UA-24772131-1']);
-     _gaq.push(['_trackPageview']);
-
-     (function() {
-       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-     })();
-
-     </script>
-  </head>
-  <body onload="timer=setTimeout('move()',2000)">
-    <p style="text-align: center;">Redirecting to <b>filemaker.tmbundle</b> project...</p>
-  </body>
-</html>
+<div id="home">
+  <h1>Still in progress</h1>
+  <p><img class="center" src="/images/domino_fail.gif" width="100%" /></p>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
